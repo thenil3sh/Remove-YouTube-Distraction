@@ -257,6 +257,7 @@ www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 
 ! --------------------------------------------------
 ! Full window mode ( Theater Mode But Better ) 
+! Credits: https://www.reddit.com/r/uBlockOrigin/comments/1qwr4cx/youtube_make_theater_mode_fullwindow_fullscreen/
 ! --------------------------------------------------
 
 ! hide banner & recover space
