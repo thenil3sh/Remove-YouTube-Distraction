@@ -1,7 +1,6 @@
 ! Title: Remove YouTube Distraction
 ! Description: Hide shorts, ads, comments, infinite scroll, and other distractions from YouTube.
-! Version: 2026.04.14
-! Last modified: 2026-04-14
+! Last modified: 2026-04-20
 ! Homepage: https://github.com/Trazer09/Remove-YouTube-Distraction
 ! License: https://github.com/Trazer09/Remove-YouTube-Distraction/blob/main/LICENSE
 
@@ -279,3 +278,18 @@ www.youtube.com##ytd-watch-flexy[theater] video[style*=" top: -"]
 www.youtube.com##body:has(ytd-watch-flexy[theater])::-webkit-scrollbar:style( display: none !important; )
 ! hide the vertical scrollbar - Firefox specific if needed.
 www.youtube.com##:is(body,html):has(ytd-watch-flexy[theater]):style( scrollbar-width: none !important; )
+
+! How this was made in description
+www.youtube.com##.ytwHowThisWasMadeSectionViewModelHost
+
+! YouTube Logo
+www.youtube.com###logo
+
+! Your logo on header and upload
+www.youtube.com###end > .ytd-masthead.style-scope
+
+! Mic search
+www.youtube.com###voice-search-button > .ytd-masthead.style-scope > yt-button-shape
+
+! search results time and views data
+www.youtube.com###metadata
