@@ -9,7 +9,7 @@ fork of [Trazer09/Remove-YouTube-Distraction](https://github.com/Trazer09/Remove
 
 
 ### brave Browser
-- Go to <kbd> Settings </kbd> > <kbd> Shields </kbd> > <kbd> Content Filtering </kbd> [`brave://settings/shields/filters`]
+- Go to <kbd> **Settings** </kbd> > <kbd> **Shields** </kbd> > <kbd> **Content Filtering** </kbd> [`brave://settings/shields/filters`]
 - Next, copy this link, then add it to custom filter lists. (in **Add custom filter lists** section)
 ```url
 https://raw.githubusercontent.com/thenil3sh/Remove-YouTube-Distraction/refs/heads/main/filters.txt
