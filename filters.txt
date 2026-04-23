@@ -1,28 +1,8 @@
-! Title: Remove YouTube Distraction
+! Title: YouTube Distraction 
 ! Description: Hide shorts, ads, comments, infinite scroll, and other distractions from YouTube.
 ! Last modified: 2026-04-20
 ! Homepage: https://github.com/Trazer09/Remove-YouTube-Distraction
 ! License: https://github.com/Trazer09/Remove-YouTube-Distraction/blob/main/LICENSE
-
-
-! --------------------------------------------------
-! Ads (Desktop)
-! --------------------------------------------------
-
-www.youtube.com##ytd-mealbar-promo-renderer
-www.youtube.com##ytd-carousel-ad-renderer
-www.youtube.com##ytd-ad-slot-renderer
-www.youtube.com##ytd-action-companion-ad-renderer
-www.youtube.com##.ytd-display-ad-renderer
-www.youtube.com###masthead-ad
-
-
-! --------------------------------------------------
-! Ads (Mobile)
-! --------------------------------------------------
-
-m.youtube.com##ytm-companion-ad-renderer
-m.youtube.com##ytm-promoted-sparkles-web-renderer
 
 
 ! --------------------------------------------------
@@ -69,16 +49,6 @@ www.youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/i)
 
 
 ! --------------------------------------------------
-! Shorts (Mobile)
-! --------------------------------------------------
-
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-search ytd-video-renderer[is_short="true"]
-m.youtube.com##ytm-search ytm-video-with-context-renderer[is_short="true"]
-m.youtube.com##ytm-search ytm-reel-shelf-renderer
-
-
-! --------------------------------------------------
 ! Thumbnails & Hover Effects
 ! --------------------------------------------------
 
@@ -96,7 +66,7 @@ www.youtube.com###mouseover-overlay
 ! --------------------------------------------------
 
 ! Remove homepage entirely
-www.youtube.com##ytd-browse[page-subtype="home"]
+! www.youtube.com##ytd-browse[page-subtype="home"]
 
 ! If homepage is enabled, keep it minimal
 www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer > div#header
@@ -114,9 +84,9 @@ www.youtube.com###secondary
 www.youtube.com###related
 
 ! Left navigation drawer
-www.youtube.com##tp-yt-app-drawer#guide
-www.youtube.com##ytd-mini-guide-renderer[role="navigation"]
-www.youtube.com##yt-icon-button#guide-button
+! www.youtube.com##tp-yt-app-drawer#guide
+! www.youtube.com##ytd-mini-guide-renderer[role="navigation"]
+! www.youtube.com##yt-icon-button#guide-button
 
 
 ! --------------------------------------------------
@@ -124,10 +94,10 @@ www.youtube.com##yt-icon-button#guide-button
 ! --------------------------------------------------
 
 www.youtube.com##a:not(#logo)[href="/"]
-www.youtube.com##a[href="/feed/trending"]
-www.youtube.com##a[href="/feed/explore"]
-www.youtube.com##a[title="Shorts"]
-www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
+! www.youtube.com##a[href="/feed/trending"]
+! www.youtube.com##a[href="/feed/explore"]
+! www.youtube.com##a[title="Shorts"]
+! www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
 www.youtube.com##a[href="/feed/subscriptions"]
 
 
@@ -156,34 +126,6 @@ www.youtube.com##button.ytp-button.ytp-cards-button
 
 
 ! --------------------------------------------------
-! Video Player — Controls & Metadata
-! --------------------------------------------------
-
-www.youtube.com##a.ytp-next-button
-www.youtube.com###menu-container
-www.youtube.com###actions
-www.youtube.com##button[scissor_button]
-www.youtube.com##like-button-view-model .yt-spec-button-shape-next__button-text-content
-www.youtube.com###owner-sub-count
-www.youtube.com##yt-chip-cloud-chip-renderer[hide-chip]
-www.youtube.com###chat
-
-
-! --------------------------------------------------
-! Comments
-! --------------------------------------------------
-
-www.youtube.com###comments
-www.youtube.com###comment-teaser
-www.youtube.com##ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-comments-section"]
-www.youtube.com##ytd-comment-thread-renderer:not([timestamp_comment])
-www.youtube.com###author-text
-www.youtube.com###author-thumbnail
-www.youtube.com###replies.ytd-comment-thread-renderer
-www.youtube.com###vote-count-middle.ytd-comment-action-buttons-renderer
-
-
-! --------------------------------------------------
 ! Search Results
 ! --------------------------------------------------
 
@@ -199,8 +141,8 @@ www.youtube.com###container.ytd-search ytd-reel-shelf-renderer
 www.youtube.com###container.ytd-search grid-shelf-view-model.ytGridShelfViewModelHost
 
 ! Extra shelves & infinite scroll
-www.youtube.com###container.ytd-search ytd-shelf-renderer
-www.youtube.com##.ytd-search #contents > ytd-continuation-item-renderer
+! www.youtube.com###container.ytd-search ytd-shelf-renderer
+! www.youtube.com##.ytd-search #contents > ytd-continuation-item-renderer
 
 
 ! --------------------------------------------------
@@ -221,36 +163,6 @@ www.youtube.com##ytd-grid-video-renderer[badge-text]
 ! Rich view
 www.youtube.com##ytd-rich-item-renderer[is_sub_short]
 www.youtube.com##ytd-rich-item-renderer[badge-text]
-
-
-! --------------------------------------------------
-! Other
-! --------------------------------------------------
-
-www.youtube.com##ytd-notification-topbar-button-renderer
-www.youtube.com##ytd-item-section-renderer[is-playlist-suggestions]
-www.youtube.com##ytd-info-panel-container-renderer
-
-! People also search for
-www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope
-
-! Ai-generated description
-www.youtube.com###video-summary > .ytd-structured-description-content-renderer.style-scope
-
-! Social links in description
-www.youtube.com###social-links
-
-! Transcript - description
-www.youtube.com##ytd-video-description-transcript-section-renderer.ytd-structured-description-content-renderer.style-scope
-! Channel link in description
-www.youtube.com##ytd-video-description-infocards-section-renderer.ytd-structured-description-content-renderer.style-scope
-
-! Live chat carousel
-www.youtube.com##.ytVideoMetadataCarouselViewModelHost
-
-! remove serach suggestions for Tablet layout 
-www.youtube.com##ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope > .ytd-item-section-renderer.style-scope
-www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 
 
 ! --------------------------------------------------
