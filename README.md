@@ -1,39 +1,19 @@
 # Remove YouTube Distraction
+fork of [Trazer09/Remove-YouTube-Distraction](https://github.com/Trazer09/Remove-YouTube-Distraction)
 
-A custom **uBlock Origin filter list** that removes Shorts, ads, comments, infinite scroll, and other distractions from YouTube.  You don't need another extension for it
-
-## Features
-
--  **You don't need another extension** to remove the youtube distracting  elements 
--  Hide YouTube **Shorts** everywhere (homepage, sidebar, search, subscriptions, channels)  
--  Remove **ads & promo banners**  
--  Hide **comments section** and engagement junk  
--  Disable **infinite scrolling** on homepage & search  
--  Remove **notification bell**, sidebars, “For You” sections  
--  Clean up UI for focus-friendly watching  
 
 ## Installation
+### uBlock Origin
+- Install [uBlock Origin](https://github.com/gorhill/uBlock).  
+- Copy and paste the **filtes.txt** content in **My Filters** section of ublock origin and click apply changes. 
 
 
-Install [uBlock Origin](https://github.com/gorhill/uBlock).  
+### brave Browser
+- Go to <kbd> Settings </kbd> > <kbd> Shields </kbd> > <kbd> Content Filtering </kbd> [`brave://settings/shields/filters`]
+- Next, copy this link, then add it to custom filter lists. (in **Add custom filter lists** section)
+```url
+https://raw.githubusercontent.com/thenil3sh/Remove-YouTube-Distraction/refs/heads/main/filters.txt
+```
 
-
-Copy and paste the **filtes.txt** content in **My Filters** section of ublock origin and click apply changes. 
-
-
-## Notes
-
-Some filters are commented out (! in front) so you can enable them manually.
-
-This list is actively maintained to keep up with YouTube’s UI changes. If you find this repository useful, feel free to star ⭐ it to show your support.
-
-## Want Extension ? 
-
-RYS — Remove YouTube Suggestions
-
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions)
-- [Chrome](https://chrome.google.com/webstore/detail/remove-youtube-suggestion/cdhdichomdnlaadbndgmagohccgpejae)
-- [Github](https://github.com/lawrencehook/remove-youtube-suggestions)    ( Show some love to him as well by starring his GitHub ⭐ )
-
-
-
+> [!NOTE]  
+> This is a customized filter list that still leaves some of the youtube distractions in place, and may or may not be updated with time.
