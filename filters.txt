@@ -66,7 +66,7 @@ www.youtube.com###mouseover-overlay
 ! --------------------------------------------------
 
 ! Remove homepage entirely
-! www.youtube.com##ytd-browse[page-subtype="home"]
+www.youtube.com##ytd-browse[page-subtype="home"]
 
 ! If homepage is enabled, keep it minimal
 www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer > div#header
@@ -93,12 +93,12 @@ www.youtube.com###related
 ! Left Bar — Links
 ! --------------------------------------------------
 
-www.youtube.com##a:not(#logo)[href="/"]
+! www.youtube.com##a:not(#logo)[href="/"]
 ! www.youtube.com##a[href="/feed/trending"]
 ! www.youtube.com##a[href="/feed/explore"]
 ! www.youtube.com##a[title="Shorts"]
 ! www.youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
-www.youtube.com##a[href="/feed/subscriptions"]
+! www.youtube.com##a[href="/feed/subscriptions"]
 
 
 ! --------------------------------------------------
