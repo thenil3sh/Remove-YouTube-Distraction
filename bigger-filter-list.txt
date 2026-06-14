@@ -228,6 +228,19 @@ www.youtube.com##ytd-rich-item-renderer[badge-text]
 
 
 ! --------------------------------------------------
+! Playables
+! --------------------------------------------------
+
+! Hide Playables suggestions and game promo sections
+www.youtube.com##ytd-rich-section-renderer:has-text(/Playables/i)
+www.youtube.com##ytd-rich-item-renderer:has-text(/Playables/i)
+www.youtube.com##ytd-game-renderer
+www.youtube.com##ytd-playables-renderer
+www.youtube.com##[class*="playables"]
+www.youtube.com##[href*="/playables"]
+
+
+! --------------------------------------------------
 ! Other
 ! --------------------------------------------------
 
