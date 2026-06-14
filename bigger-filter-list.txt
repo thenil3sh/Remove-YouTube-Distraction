@@ -17,6 +17,7 @@ www.youtube.com##.ytd-display-ad-renderer
 www.youtube.com###masthead-ad
 
 
+
 ! --------------------------------------------------
 ! Ads (Mobile)
 ! --------------------------------------------------
@@ -66,6 +67,11 @@ www.youtube.com##yt-tab-shape:has-text(/^Shorts$/i)
 
 ! Chips / filters
 www.youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/i)
+
+
+! Community Post
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-backstage-post-renderer
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer ytd-backstage-post-renderer
 
 
 ! --------------------------------------------------
